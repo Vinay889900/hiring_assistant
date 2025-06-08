@@ -1,7 +1,32 @@
 import streamlit as st
 import os
 import json
+# Import your functions from chatbot_logic. No need for dotenv here directly.
 from chatbot_logic import greet_candidate, generate_technical_questions, end_conversation
+import google.generativeai as genai
+from dotenv import load_dotenv # <--- Import load_dotenv here!
+
+# Load environment variables from .env file FIRST THING in this module
+load_dotenv()
+
+# Configure the API key
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+# Check if the API key was successfully loaded
+if not GEMINI_API_KEY:
+    # This warning will now appear if the .env file is missing/incorrect
+    # or if GEMINI_API_KEY isn't set in the environment.
+    print("⚠️ GEMINI_API_KEY environment variable not found. Please ensure it's set in your .env file or system environment.")
+    # For a robust application, you might want to raise an exception here
+    # or provide a more graceful exit. For now, we'll assign a placeholder
+    # which will cause the API calls to fail but prevent the script from crashing immediately.
+    # In a deployed app, you'd want a hard stop if the key isn't present.
+    raise ValueError("GEMINI_API_KEY is not set. Please set it in your .env file.")
+
+
+genai.configure(api_key=GEMINI_API_KEY)
+
+
+
 
 # ---------------- Page Config -------------------
 st.set_page_config(page_title="TalentScout AI Interviewer 🌟", page_icon="🤖", layout="centered")
@@ -179,7 +204,7 @@ if 'tech_questions' not in st.session_state:
     st.session_state.tech_questions = []
 if 'conversation_ended' not in st.session_state:
     st.session_state.conversation_ended = False
-if 'Youtubes' not in st.session_state:
+if 'Youtubes' not in st.session_state: # Renamed from 'Youtubes' for clarity
     st.session_state.Youtubes = {}
 
 # ---------------- Utility Functions -------------------
@@ -197,7 +222,7 @@ def save_candidate_data():
             json.dump({
                 'candidate_info': st.session_state.candidate_info,
                 'technical_questions': st.session_state.tech_questions,
-                'technical_answers': st.session_state.Youtubes,
+                'technical_answers': st.session_state.Youtubes, # Using 'Youtubes'
                 'conversation_history': st.session_state.messages
             }, f, indent=4)
         st.success(f"✅ Your data has been successfully saved as `{filename}`!")
@@ -215,7 +240,7 @@ def reset_conversation():
     }
     st.session_state.tech_questions = []
     st.session_state.conversation_ended = False
-    st.session_state.Youtubes = {}
+    st.session_state.Youtubes = {} # Using 'Youtubes'
     st.rerun()
 
 # ---------------- Header -------------------
@@ -355,7 +380,7 @@ else:
     # --- Tech Stack Input (multi-line) ---
     elif current_step == 'ask_tech_stack':
         # Prompt for tech stack will be directly in the chat message
-        if not st.session_state.messages[-1]["content"].startswith("Tell me about your primary tech stack"): # Avoid repeating prompt
+        if not st.session_state.messages[-1]["content"].startswith("🛠️ Tell me about your primary tech stack"): # Avoid repeating prompt
              tech_stack_prompt = "🛠️ Tell me about your primary tech stack or key skills, separated by commas (e.g., Python, React, AWS, SQL). This helps me tailor questions for you!"
              with st.chat_message("assistant"):
                  st.markdown(tech_stack_prompt)
@@ -383,7 +408,7 @@ else:
                         with st.chat_message("assistant"):
                             st.markdown(question_msg)
                         st.session_state.messages.append({"role": "assistant", "content": question_msg})
-                        st.session_state.Youtubes = {f"Q{i}": "" for i in range(1, len(questions) + 1)}
+                        st.session_state.Youtubes = {f"Q{i}": "" for i in range(1, len(questions) + 1)} # Using 'Youtubes'
                         st.session_state.current_step = 'technical_questions'
                         st.rerun()
                     else:
@@ -404,16 +429,16 @@ else:
 
         with st.form("technical_answers_form", clear_on_submit=False):
             for idx, q in enumerate(st.session_state.tech_questions, 1):
-                default_answer = st.session_state.Youtubes.get(f"Q{idx}", "")
+                default_answer = st.session_state.Youtubes.get(f"Q{idx}", "") # Using 'Youtubes'
                 answer = st.text_area(f"**Question {idx}:** {q}", key=f"ans_{idx}", value=default_answer, height=180)
-                st.session_state.Youtubes[f"Q{idx}"] = answer # Update state as user types
+                st.session_state.Youtubes[f"Q{idx}"] = answer # Update state as user types # Using 'Youtubes'
 
             submitted = st.form_submit_button("Submit All Answers ✨", type="primary")
             if submitted:
-                if all(st.session_state.Youtubes[q_key].strip() for q_key in st.session_state.Youtubes):
+                if all(st.session_state.Youtubes[q_key].strip() for q_key in st.session_state.Youtubes): # Using 'Youtubes'
                     final_user_response = "Here are my answers to the technical questions: \n\n"
                     for idx, q in enumerate(st.session_state.tech_questions, 1):
-                        answer = st.session_state.Youtubes[f"Q{idx}"]
+                        answer = st.session_state.Youtubes[f"Q{idx}"] # Using 'Youtubes'
                         final_user_response += f"**Q{idx}:** {q}\n**A:** {answer}\n\n"
 
                     with st.chat_message("user"):

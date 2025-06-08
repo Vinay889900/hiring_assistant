@@ -1,17 +1,4 @@
 import os
-import google.generativeai as genai
-
-# Configure the API key
-# It's recommended to set this as an environment variable (e.g., in your .env file or deployment environment)
-# For local testing, you can uncomment and replace with your key, but be careful with committing it.
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY") # This should be set in your environment
-if not GEMINI_API_KEY:
-    print("⚠️ GEMINI_API_KEY environment variable not set. Please set it to your actual Gemini API key.")
-    print("Using a placeholder key for demonstration. This will likely cause API errors.")
-    GEMINI_API_KEY = "AIzaSyBE_c5oMxTt6V7c2nnHOupfK0NM9faKwCI" # Replace with your actual key for local testing if not using env var
-
-genai.configure(api_key=GEMINI_API_KEY)
-
 def greet_candidate():
     """Greets the candidate and explains the chatbot's purpose with emojis."""
     return "👋 Hello there! I'm your **TalentScout AI Assistant**. I'm here to gather some quick information and then ask a few technical questions based on your skills. Let's make this quick and smooth! ✨"
@@ -49,12 +36,13 @@ def generate_technical_questions(tech_stack):
             for q in general_fallback_questions:
                 if q not in filtered_questions:
                     filtered_questions.append(q)
-            
+
         return filtered_questions[:5] # Ensure max of 5 questions
 
     except Exception as e:
         print(f"❌ Error generating questions from Gemini: {e}")
-        return [f"⚠️ I apologize, but I couldn't generate technical questions at this moment due to an API error. Please ensure your Gemini API key is correctly set and try again. Error details: {e}"]
+        # Return a user-friendly error message
+        return [f"Error: I encountered an issue generating technical questions at this moment due to an API error. Please ensure your Gemini API key is correctly set and try again. (Details: {e})"]
 
 def handle_fallback():
     """Provides a fallback response for unclear input."""
