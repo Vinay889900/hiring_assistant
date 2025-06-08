@@ -1,118 +1,95 @@
 🤖 AI-Powered Hiring Assistant Chatbot
 
-An intelligent chatbot built with Streamlit and Gemini API to automate the initial screening process of candidates in a tech recruitment setting. It collects candidate information and generates personalized technical questions based on the declared tech stack.
+A conversational AI chatbot that helps streamline the tech hiring process by collecting candidate details and dynamically generating relevant technical questions based on the candidate's tech stack.
 
 
 ---
 
-📌 Project Overview
+🚀 Features
 
-The Hiring Assistant Chatbot assists a fictional recruitment agency, TalentScout, by:
+🗣️ Conversational UI with Streamlit
 
-Collecting candidate information through a conversational UI
+📋 Candidate Information Collection
 
-Dynamically generating technical questions based on the candidate's provided tech stack
+🔍 Tech-Stack Specific Question Generation
 
-Ensuring a coherent and seamless user experience using LLMs
+🧠 Powered by Gemini API (Google Generative AI)
 
+🔐 Secure API Key Handling with .env
 
-
----
-
-🧰 Tech Stack
-
-Frontend: Streamlit
-
-Backend: Python
-
-LLM Integration: Gemini API (Google Generative AI)
-
-Environment: .env for API key management
-
-Deployment: Render
+☁️ Deployed on Render (or local via Streamlit)
 
 
 
 ---
 
-⚙️ Installation Instructions
+🛠️ Tech Stack
 
-1. Clone the Repository
+Python
 
+Streamlit
+
+Gemini API
+
+dotenv (.env for secure config)
+
+
+
+---
+
+🧩 How It Works
+
+1. User launches the chatbot interface.
+
+
+2. Chatbot collects candidate data (name, email, experience, tech stack).
+
+
+3. Tech stack parsed, and a prompt is sent to Gemini API.
+
+
+4. API returns custom technical questions for the provided stack.
+
+
+5. Chatbot displays the questions and thanks the user.
+
+
+
+
+---
+
+⚙️ Installation
+
+# Clone the repository
 git clone https://github.com/your-username/hiring-assistant-chatbot.git
 cd hiring-assistant-chatbot
 
-2. Install Dependencies
-
-It's recommended to use a virtual environment:
-
+# Install dependencies
 pip install -r requirements.txt
 
-3. Set Up Environment Variables
 
-Create a .env file in the root directory and add your Gemini API key:
+---
+
+🔐 API Key
+
+Create a .env file in the root folder and add:
 
 GEMINI_API_KEY=your_actual_api_key_here
 
-4. Run the App
+
+---
+
+▶️ Running the App
 
 streamlit run app.py
 
 
 ---
 
-🚀 Usage Guide
+💡 Example Use Case
 
-Start the Streamlit app
-
-Enter candidate details (name, email, experience, tech stack, etc.)
-
-The chatbot will generate and display relevant technical questions
-
-Ends with a thank-you and next steps
-
-
-
----
-
-🧠 Features
-
-Friendly conversational UI
-
-Collects and validates candidate info
-
-Generates relevant questions based on tech stack
-
-Maintains conversation flow with context
-
-Graceful fallback for unexpected inputs
-
-
-
----
-
-🧪 Prompt Design Strategy
-
-Prompts are designed to:
-
-Collect structured candidate information
-
-Generate 3–5 questions per listed skill
-
-Adapt to diverse tech stacks (e.g., Python, React, Django)
-
-Maintain a natural and coherent conversation
-
-
-
----
-
-✅ Example Input & Output
-
-Input:
-Tech Stack: Python, Django, MySQL
-
-Output:
+Tech Stack Input: Python, Django, MySQL
+Generated Questions:
 
 How does Django’s ORM work with relational databases?
 
@@ -124,13 +101,13 @@ How do you manage database migrations in Django?
 
 ---
 
-🔐 Data Privacy
+🛡️ Data Privacy
 
-No real user data is stored
+No personal data stored
 
-.env used to securely manage API keys
+API key securely managed with .env
 
-Uses simulated or anonymized test data
+Safe for testing and academic demos
 
 
 
@@ -138,11 +115,11 @@ Uses simulated or anonymized test data
 
 🛠️ Future Enhancements
 
-Sentiment analysis for emotion tracking
+Sentiment analysis
 
-Multilingual support
+Multilingual candidate support
 
-Recruiter admin panel for reviewing submissions
+Admin dashboard for recruiter review
 
 
 
