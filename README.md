@@ -7,6 +7,7 @@ An intelligent chatbot built with **Streamlit** and **Gemini API** to automate t
 ## 📌 Project Overview
 
 The **Hiring Assistant Chatbot** assists a fictional recruitment agency, **TalentScout**, by:
+
 - Collecting candidate information through a conversational UI.
 - Dynamically generating technical questions based on the candidate's provided tech stack.
 - Ensuring a coherent and seamless user experience using LLMs.
@@ -15,11 +16,12 @@ The **Hiring Assistant Chatbot** assists a fictional recruitment agency, **Talen
 
 ## 🧰 Tech Stack
 
-- **Frontend**: Streamlit
-- **Backend**: Python
-- **LLM Integration**: Gemini API (Google Generative AI)
-- **Environment**: `.env` for API key management
-- **Deployment**: Render
+- **Frontend**: Streamlit  
+- **Backend**: Python  
+- **LLM Integration**: Gemini API (Google Generative AI)  
+- **Environment**: `.env` for API key management  
+- **Deployment**: Render  
+
 ---
 
 ## ⚙️ Installation Instructions
@@ -31,7 +33,7 @@ cd hiring-assistant-chatbot
 
 2. Install Dependencies
 
-Create a virtual environment (recommended) and install dependencies:
+Create a virtual environment (recommended) and install:
 
 pip install -r requirements.txt
 
@@ -79,6 +81,7 @@ Handles context and fallback gracefully
 Designed using prompt engineering best practices
 
 
+
 ---
 
 🧪 Prompt Design
@@ -100,7 +103,6 @@ Maintain a smooth and human-like conversation flow
 ✅ Example Tech Stack & Output
 
 Input:
-
 Tech Stack: Python, Django, MySQL
 
 Generated Questions:
@@ -135,4 +137,5 @@ Multilingual support
 
 Admin panel for recruiters to review responses
 
+---
 
