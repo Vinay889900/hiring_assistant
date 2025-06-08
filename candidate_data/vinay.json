@@ -1,0 +1,66 @@
+{
+    "candidate_info": {
+        "full_name": "vinay",
+        "email": "tychg@gmail.com",
+        "phone": "9978er78435",
+        "experience": "2",
+        "position": "python",
+        "location": "hyd",
+        "tech_stack": [
+            "python"
+        ]
+    },
+    "tech_questions": [
+        "What is the Global Interpreter Lock (GIL) in Python and its implications?",
+        "Explain the difference between `list` and `tuple` in Python.",
+        "How would you handle exceptions in a Python program?",
+        "Describe your preferred method for unit testing in Python.",
+        "What are some common Python libraries you have used and for what purposes?"
+    ],
+    "conversation": [
+        {
+            "role": "assistant",
+            "content": "Hello! I'm your Hiring Assistant from TalentScout. I'm here to collect some initial information and ask you a few technical questions based on your tech stack. Let's get started!"
+        },
+        {
+            "role": "user",
+            "content": "My name is vinay"
+        },
+        {
+            "role": "user",
+            "content": "My email is tychg@gmail.com"
+        },
+        {
+            "role": "user",
+            "content": "My phone number is 9978er78435"
+        },
+        {
+            "role": "user",
+            "content": "I have 2 years of experience"
+        },
+        {
+            "role": "user",
+            "content": "I'm interested in python"
+        },
+        {
+            "role": "user",
+            "content": "I'm located in hyd"
+        },
+        {
+            "role": "user",
+            "content": "My tech stack includes: python"
+        },
+        {
+            "role": "assistant",
+            "content": "Thanks! Here are a few questions for you:\n\n**1.** What is the Global Interpreter Lock (GIL) in Python and its implications?\n\n**2.** Explain the difference between `list` and `tuple` in Python.\n\n**3.** How would you handle exceptions in a Python program?\n\n**4.** Describe your preferred method for unit testing in Python.\n\n**5.** What are some common Python libraries you have used and for what purposes?\n\n"
+        },
+        {
+            "role": "user",
+            "content": "Here are my answers:\n\n**Q1:** What is the Global Interpreter Lock (GIL) in Python and its implications?\n**A:** cgd\n\n**Q2:** Explain the difference between `list` and `tuple` in Python.\n**A:** tyc\n\n**Q3:** How would you handle exceptions in a Python program?\n**A:** dty\n\n**Q4:** Describe your preferred method for unit testing in Python.\n**A:** tdy\n\n**Q5:** What are some common Python libraries you have used and for what purposes?\n**A:** tyc\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Thank you for your time! We have all the information we need for now. We will be in touch regarding the next steps."
+        }
+    ]
+}

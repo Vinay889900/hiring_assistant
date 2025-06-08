@@ -1,0 +1,95 @@
+{
+    "candidate_info": {
+        "full_name": "vinay",
+        "email": "vinay@gmail.com",
+        "phone": "9949933912",
+        "experience": "2",
+        "position": "software",
+        "location": "remote",
+        "tech_stack": [
+            "python"
+        ]
+    },
+    "technical_questions": [
+        "1. Explain the difference between `list` and `tuple` in Python, including use cases where one is preferred over the other.",
+        "2. Describe a scenario where you would use a generator in Python and explain its advantages over a list comprehension.",
+        "3.  How would you handle exceptions in Python to ensure robust code, providing examples of `try`, `except`, `finally` blocks?",
+        "4. Explain the concept of decorators in Python and provide a simple example of its use."
+    ],
+    "technical_answers": {
+        "Q1": "uvg",
+        "Q2": "cg h",
+        "Q3": "gh ",
+        "Q4": "tc"
+    },
+    "conversation_history": [
+        {
+            "role": "assistant",
+            "content": "\ud83d\udc4b Hello there! I'm your **TalentScout AI Assistant**. I'm here to gather some quick information and then ask a few technical questions based on your skills. Let's make this quick and smooth! \u2728"
+        },
+        {
+            "role": "user",
+            "content": "vinay"
+        },
+        {
+            "role": "assistant",
+            "content": "Nice to meet you, **vinay**! \ud83d\udc4b"
+        },
+        {
+            "role": "user",
+            "content": "vinay@gmail.com"
+        },
+        {
+            "role": "assistant",
+            "content": "Got it! Your email has been recorded. \ud83d\udce7"
+        },
+        {
+            "role": "user",
+            "content": "9949933912"
+        },
+        {
+            "role": "assistant",
+            "content": "Thanks for your phone number! \ud83d\udcde"
+        },
+        {
+            "role": "user",
+            "content": "2"
+        },
+        {
+            "role": "assistant",
+            "content": "Okay, **2 years** of experience. That's helpful! \ud83d\udc4d"
+        },
+        {
+            "role": "user",
+            "content": "software"
+        },
+        {
+            "role": "assistant",
+            "content": "Understood, you're looking for **software** roles. \ud83c\udfaf"
+        },
+        {
+            "role": "user",
+            "content": "remote"
+        },
+        {
+            "role": "assistant",
+            "content": "Great! Your location is **remote**. \ud83d\udccd"
+        },
+        {
+            "role": "user",
+            "content": "My tech stack includes: python"
+        },
+        {
+            "role": "assistant",
+            "content": "Excellent! To assess your technical skills, please answer the following questions. Provide as much detail as you can for each. \ud83d\udc47\n\n**Q1.** 1. Explain the difference between `list` and `tuple` in Python, including use cases where one is preferred over the other.\n\n**Q2.** 2. Describe a scenario where you would use a generator in Python and explain its advantages over a list comprehension.\n\n**Q3.** 3.  How would you handle exceptions in Python to ensure robust code, providing examples of `try`, `except`, `finally` blocks?\n\n**Q4.** 4. Explain the concept of decorators in Python and provide a simple example of its use."
+        },
+        {
+            "role": "user",
+            "content": "Here are my answers to the technical questions: \n\n**Q1:** 1. Explain the difference between `list` and `tuple` in Python, including use cases where one is preferred over the other.\n**A:** uvg\n\n**Q2:** 2. Describe a scenario where you would use a generator in Python and explain its advantages over a list comprehension.\n**A:** cg h\n\n**Q3:** 3.  How would you handle exceptions in Python to ensure robust code, providing examples of `try`, `except`, `finally` blocks?\n**A:** gh \n\n**Q4:** 4. Explain the concept of decorators in Python and provide a simple example of its use.\n**A:** tc\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Thank you for your time and for sharing your information! Your details and answers have been successfully recorded. We'll be in touch very soon regarding the next steps in our hiring process. Have a fantastic day! \ud83d\ude0a\ud83d\udc4b"
+        }
+    ]
+}

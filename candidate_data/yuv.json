@@ -1,0 +1,82 @@
+{
+    "candidate_info": {
+        "full_name": "yuv",
+        "email": "uppupavani29@gmail.com",
+        "phone": "9978er78435",
+        "experience": "2",
+        "position": "python",
+        "location": "gen ai ",
+        "tech_stack": [
+            "python"
+        ]
+    },
+    "tech_questions": [
+        "I apologize, but I couldn't generate technical questions at this time. Error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}. Please ensure your OpenAI API key is correctly set."
+    ],
+    "conversation": [
+        {
+            "role": "assistant",
+            "content": "Hello! I'm your Hiring Assistant from TalentScout. I'm here to collect some initial information and ask you a few technical questions based on your tech stack. Let's get started!"
+        },
+        {
+            "role": "user",
+            "content": "My name is yuv"
+        },
+        {
+            "role": "assistant",
+            "content": "Nice to meet you, yuv! What is your email address?"
+        },
+        {
+            "role": "user",
+            "content": "My email is uppupavani29@gmail.com"
+        },
+        {
+            "role": "assistant",
+            "content": "Thank you! What is your phone number?"
+        },
+        {
+            "role": "user",
+            "content": "My phone number is 9978er78435"
+        },
+        {
+            "role": "assistant",
+            "content": "Great! How many years of experience do you have in your field?"
+        },
+        {
+            "role": "user",
+            "content": "I have 2 years of experience"
+        },
+        {
+            "role": "assistant",
+            "content": "Thank you! What position(s) are you interested in?"
+        },
+        {
+            "role": "user",
+            "content": "I'm interested in python"
+        },
+        {
+            "role": "assistant",
+            "content": "What is your current location?"
+        },
+        {
+            "role": "user",
+            "content": "I'm located in gen ai "
+        },
+        {
+            "role": "assistant",
+            "content": "Please list your tech stack (programming languages, frameworks, databases, tools, etc.). Separate each technology with a comma."
+        },
+        {
+            "role": "user",
+            "content": "My tech stack includes: python"
+        },
+        {
+            "role": "user",
+            "content": "My tech stack includes: python"
+        },
+        {
+            "role": "assistant",
+            "content": "Thank you for providing your tech stack. Based on your expertise, I'd like to ask you a few technical questions:\n\n1. I apologize, but I couldn't generate technical questions at this time. Error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}. Please ensure your OpenAI API key is correctly set.\n\n"
+        }
+    ]
+}
