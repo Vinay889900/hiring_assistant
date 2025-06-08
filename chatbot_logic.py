@@ -1,4 +1,6 @@
 import os
+import google.generativeai as genai
+
 def greet_candidate():
     """Greets the candidate and explains the chatbot's purpose with emojis."""
     return "👋 Hello there! I'm your **TalentScout AI Assistant**. I'm here to gather some quick information and then ask a few technical questions based on your skills. Let's make this quick and smooth! ✨"
