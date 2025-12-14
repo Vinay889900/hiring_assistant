@@ -1,0 +1,109 @@
+{
+    "candidate_info": {
+        "full_name": "ukjcg",
+        "email": "vjua@gmail.com",
+        "phone": "09875607968597",
+        "experience": "1",
+        "position": "software",
+        "location": "remote",
+        "tech_stack": [
+            "python"
+        ]
+    },
+    "technical_questions": [
+        "1.  Describe the difference between lists, tuples, and sets in Python, including their mutability and when you might choose one over the others.",
+        "2.  Explain how Python's garbage collection works.",
+        "3.  Implement a decorator in Python that logs the execution time of a function.",
+        "4.  How does Python handle multiple inheritance? Explain the Method Resolution Order (MRO).",
+        "5.  What are generators in Python, and how do they differ from regular functions? Provide an example use case."
+    ],
+    "technical_answers": {
+        "Q1": "utcg",
+        "Q2": "tcg ",
+        "Q3": "tctc",
+        "Q4": "tcu",
+        "Q5": "ucj"
+    },
+    "conversation_history": [
+        {
+            "role": "assistant",
+            "content": "\ud83d\udc4b Hello there! I'm your **TalentScout AI Assistant**. I'm here to gather some quick information and then ask a few technical questions based on your skills. Let's make this quick and smooth! \u2728"
+        },
+        {
+            "role": "user",
+            "content": "ukjcg"
+        },
+        {
+            "role": "assistant",
+            "content": "Nice to meet you, **ukjcg**! \ud83d\udc4b"
+        },
+        {
+            "role": "user",
+            "content": "vjua@gmail.com"
+        },
+        {
+            "role": "assistant",
+            "content": "Got it! Your email has been recorded. \ud83d\udce7"
+        },
+        {
+            "role": "user",
+            "content": "09875607968597"
+        },
+        {
+            "role": "assistant",
+            "content": "Thanks for your phone number! \ud83d\udcde"
+        },
+        {
+            "role": "user",
+            "content": "1"
+        },
+        {
+            "role": "assistant",
+            "content": "Okay, **1 years** of experience. That's helpful! \ud83d\udc4d"
+        },
+        {
+            "role": "user",
+            "content": "software"
+        },
+        {
+            "role": "assistant",
+            "content": "Understood, you're interested in **software** roles. \ud83d\ude80"
+        },
+        {
+            "role": "user",
+            "content": "remote"
+        },
+        {
+            "role": "assistant",
+            "content": "Great! Your location is **remote**. \ud83d\udccd Now, let's talk tech!"
+        },
+        {
+            "role": "assistant",
+            "content": "\ud83d\udee0\ufe0f Tell me about your primary tech stack or key skills, separated by commas (e.g., Python, React, AWS, SQL). This helps me tailor questions for you!"
+        },
+        {
+            "role": "user",
+            "content": "My tech stack includes: python"
+        },
+        {
+            "role": "assistant",
+            "content": "\ud83d\udee0\ufe0f Tell me about your primary tech stack or key skills, separated by commas (e.g., Python, React, AWS, SQL). This helps me tailor questions for you!"
+        },
+        {
+            "role": "user",
+            "content": "My tech stack includes: python"
+        },
+        {
+            "role": "assistant",
+            "content": "Excellent! Here are a few technical questions for you. Please answer them in detail. Take your time! \ud83d\udc47\n\n**Q1.** 1.  Describe the difference between lists, tuples, and sets in Python, including their mutability and when you might choose one over the others.\n\n**Q2.** 2.  Explain how Python's garbage collection works.\n\n**Q3.** 3.  Implement a decorator in Python that logs the execution time of a function.\n\n**Q4.** 4.  How does Python handle multiple inheritance? Explain the Method Resolution Order (MRO).\n\n**Q5.** 5.  What are generators in Python, and how do they differ from regular functions? Provide an example use case."
+        },
+        {
+            "role": "user",
+            "content": "Here are my answers to the technical questions: \n\n**Q1:** 1.  Describe the difference between lists, tuples, and sets in Python, including their mutability and when you might choose one over the others.\n**A:** utcg\n\n**Q2:** 2.  Explain how Python's garbage collection works.\n**A:** tcg \n\n**Q3:** 3.  Implement a decorator in Python that logs the execution time of a function.\n**A:** tctc\n\n**Q4:** 4.  How does Python handle multiple inheritance? Explain the Method Resolution Order (MRO).\n**A:** tcu\n\n**Q5:** 5.  What are generators in Python, and how do they differ from regular functions? Provide an example use case.\n**A:** ucj\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Thank you for your time and for sharing your information! Your details and answers have been successfully recorded. We'll be in touch very soon regarding the next steps in our hiring process. Have a fantastic day! \ud83d\ude0a\ud83d\udc4b"
+        }
+    ]
+}
