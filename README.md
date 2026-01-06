@@ -2,8 +2,7 @@
 
 A conversational AI chatbot that helps streamline the tech hiring process by collecting candidate details and dynamically generating relevant technical questions based on the candidate's tech stack.
 
-
----
+🔗Live Demo- https://hiring-assistant-pnte.onrender.com/
 
 🚀 Features
 
